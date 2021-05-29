@@ -5,21 +5,22 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{% block title %}QueteTwig2{% endblock %}</title>
+    <title>{% block title %}QueteTwig3{% endblock %}</title>
 
     <link rel="stylesheet" href="/assets/css/style.css">
     {% block stylesheet %}{% endblock %}
     <link rel="icon" href="/assets/images/favicon.png">
 </head>
-<header>
+<!--<header>
     <ul>
         <li><a href="">Test</a></li>
     </ul>
-</header>
+</header>-->
 <body>
     {% block content %}{% endblock %}
+    {% block footer %}
+        {% include '_footer.html.twig' %}
+    {% endblock %}
     {% block javascript %}{% endblock %}
 </body>
 </html>
-
-
